@@ -1,0 +1,57 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:linear-gradient(160deg,#eaf2ff,#f8fbff);
+  color:#1f2937;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.app{width:min(680px,100%)}
+.card{
+  background:#fff;
+  border-radius:22px;
+  padding:28px;
+  box-shadow:0 18px 45px rgba(30,60,120,.14);
+}
+.hidden{display:none}
+h1{margin:0 0 8px;font-size:32px}
+h2{font-size:24px;line-height:1.55}
+.subtitle{color:#64748b;margin-bottom:24px}
+button{
+  width:100%;
+  border:0;
+  border-radius:14px;
+  padding:15px 18px;
+  margin:8px 0;
+  font-weight:700;
+  font-size:17px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+button.sub{background:#e2e8f0;color:#334155}
+button.wrong{background:#ef4444}
+button.small{width:auto;padding:9px 14px;font-size:14px;margin:0;background:#e2e8f0;color:#334155}
+.top{display:flex;justify-content:space-between;align-items:center;color:#64748b}
+input{
+  width:100%;
+  padding:16px;
+  border-radius:14px;
+  border:2px solid #cbd5e1;
+  font-size:18px;
+}
+.answer{
+  margin-top:18px;
+  padding:18px;
+  background:#f1f5f9;
+  border-radius:14px;
+  font-size:20px;
+  font-weight:700;
+  line-height:1.6;
+}
+.buttons{margin-top:14px}
+#status,#resultText{line-height:1.7;color:#475569}
