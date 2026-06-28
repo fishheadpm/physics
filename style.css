@@ -20,7 +20,31 @@ body{
 .hidden{display:none}
 h1{margin:0 0 8px;font-size:32px}
 h2{font-size:24px;line-height:1.55}
-.subtitle{color:#64748b;margin-bottom:24px}
+.section-title{
+  margin:22px 0 10px;
+  font-size:18px;
+  color:#334155;
+}
+.subtitle{color:#64748b;margin-bottom:18px}
+.round-list{
+  display:grid;
+  gap:10px;
+  margin-bottom:18px;
+}
+.round-btn{
+  text-align:left;
+  background:#2563eb;
+}
+.round-btn .round-title{
+  display:block;
+  font-size:19px;
+}
+.round-btn .round-count{
+  display:block;
+  margin-top:4px;
+  opacity:.85;
+  font-size:13px;
+}
 button{
   width:100%;
   border:0;
@@ -33,16 +57,23 @@ button{
   color:white;
   cursor:pointer;
 }
+button:hover{filter:brightness(.98)}
 button.sub{background:#e2e8f0;color:#334155}
 button.wrong{background:#ef4444}
-button.small{width:auto;padding:9px 14px;font-size:14px;margin:0;background:#e2e8f0;color:#334155}
+button.danger-light{background:#fee2e2;color:#991b1b}
+button.small{
+  width:auto;
+  padding:9px 14px;
+  font-size:14px;
+  margin:0;
+  background:#e2e8f0;
+  color:#334155;
+}
 .top{display:flex;justify-content:space-between;align-items:center;color:#64748b}
-input{
-  width:100%;
-  padding:16px;
-  border-radius:14px;
-  border:2px solid #cbd5e1;
-  font-size:18px;
+.round-name{
+  margin:18px 0 0;
+  color:#2563eb;
+  font-weight:700;
 }
 .answer{
   margin-top:18px;

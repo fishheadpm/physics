@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>物理 一問一答：磁界</title>
+  <title>物理 一問一答</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="app">
     <section id="menu" class="card">
       <h1>物理 一問一答</h1>
-      <p class="subtitle">磁界・コイル・フレミングの法則・モーター</p>
-      <button id="startBtn">最初から</button>
-      <button id="reviewBtn">間違えた問題</button>
-      <button id="resetBtn" class="sub">履歴リセット</button>
+      <p class="subtitle">単元を選んで学習できます</p>
+
+      <h2 class="section-title">単元選択</h2>
+      <div id="roundList" class="round-list"></div>
+
+      <button id="reviewBtn" class="sub">選択中の単元の間違えた問題</button>
+      <button id="resetBtn" class="sub danger-light">選択中の単元の履歴リセット</button>
       <p id="status"></p>
     </section>
 
@@ -22,22 +25,24 @@
         <span id="count"></span>
         <button id="backBtn" class="small">メニュー</button>
       </div>
+
+      <p id="roundName" class="round-name"></p>
       <h2 id="question"></h2>
-      <input id="answerInput" type="text" placeholder="答えを入力">
-      <div class="buttons">
-        <button id="showBtn">答えを見る</button>
-      </div>
+
+      <button id="showBtn">答えを見る</button>
+
       <div id="answerBox" class="answer hidden"></div>
+
       <div class="buttons hidden" id="judgeButtons">
-        <button id="correctBtn">正解</button>
-        <button id="wrongBtn" class="wrong">不正解</button>
+        <button id="correctBtn">わかっていた</button>
+        <button id="wrongBtn" class="wrong">わからなかった</button>
       </div>
     </section>
 
     <section id="result" class="card hidden">
       <h2>終了</h2>
       <p id="resultText"></p>
-      <button id="againBtn">もう一度</button>
+      <button id="againBtn">同じ単元をもう一度</button>
       <button id="menuBtn">メニューへ</button>
     </section>
   </main>
